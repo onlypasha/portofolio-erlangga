@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlangga | RPL Student Portfolio</title>
+    <meta name="description" content="Portofolio Erlangga, Siswa SMK Jurusan Rekayasa Perangkat Lunak. Web Developer & Programmer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="scroll-progress"></div>
+        <div class="container nav-container">
+            <a href="#hero" class="logo">&lt;Erlangga.AP /&gt;</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Halo, saya Erlangga</p>
+                <h1 class="hero-title">I <span class="highlight" id="typing-text"></span></h1>
+                <p class="hero-description">
+                    Siswa SMK Jurusan Rekayasa Perangkat Lunak. Saya suka membangun website yang bersih, responsif, dan fungsional. Saya juga suka Cyber Security.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Projek</a>
+                    <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code class="language-javascript">
+const developer = {
+  name: "Erlangga Abdee Pasha",
+  role: "RPL Student",
+  skills: ["Web Programming", "Cyber Security"],
+  hardWorker: true,
+  problemSolver: true
+};
+
+if (developer.hardWorker) {
+  console.log("Hire Me!");
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image scroll-reveal">
+                    <img src="img/foto-profil.jpg" alt="Foto Profil Erlangga">
+                </div>
+                <div class="about-text scroll-reveal">
+                    <p>
+                        Saya adalah seorang siswa SMK yang memiliki passion besar di dunia teknologi, khususnya dalam pengembangan perangkat lunak. Selama mendalami dunia pengembangan perangkat lunak saya telah menciptakan berbagai karya, baik berbentuk web atau aplikasi
+                    </p>
+                    <p>
+                        Selain pengembangan perangkat lunak, saya juga tertarik mempelajari cyber security. Saat ini saya sedang dan akan selalu mempelajari celah pada sebuah aplikasi, jaringan, dan website serta mencari solusinya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2027(Perkiraan)</div>
+                        <h3 class="timeline-title">Siswa RPL</h3>
+                        <p class="timeline-organization">SMK Negeri 17 Jakarta</p>
+                        <p class="timeline-description">
+                            Mendalami Cyber Security, pemrograman web, mobile development, dan database management. Aktif dalam berbagai project pengembangan aplikasi.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3 class="timeline-title">Ketua Divisi 5 Sosial</h3>
+                        <p class="timeline-organization">OSIS SMK Negeri 17 Jakarta</p>
+                        <p class="timeline-description">
+                            Mempimpin divisi 5 sosial dan mengelola berbagai kegiatan sekolah. Meningkatkan soft skills dalam leadership dan management.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            
+            <div class="marquee-container">
+                <!-- Track 1: Frontend & Design (Left to Right) -->
+                <div class="marquee-wrapper">
+                    <div class="marquee-track scroll-left">
+                        <!-- Original Set -->
+                        <div class="tech-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                        <div class="tech-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="tech-icon"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                        <div class="tech-icon"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="tech-icon"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                        <div class="tech-icon"><i class="fas fa-wind"></i><span>Tailwind</span></div>
+                        <div class="tech-icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                        <!-- Duplicate Set -->
+                        <div class="tech-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                        <div class="tech-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="tech-icon"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                        <div class="tech-icon"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="tech-icon"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                        <div class="tech-icon"><i class="fas fa-wind"></i><span>Tailwind</span></div>
+                        <div class="tech-icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                    </div>
+                </div>
+
+                <!-- Track 2: Backend & Tools (Right to Left) -->
+                <div class="marquee-wrapper">
+                    <div class="marquee-track scroll-right">
+                        <!-- Original Set -->
+                        <div class="tech-icon"><i class="fab fa-php"></i><span>PHP</span></div>
+                        <div class="tech-icon"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                        <div class="tech-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                        <div class="tech-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="tech-icon"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="tech-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
+                        <!-- Duplicate Set -->
+                        <div class="tech-icon"><i class="fab fa-php"></i><span>PHP</span></div>
+                        <div class="tech-icon"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                        <div class="tech-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                        <div class="tech-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="tech-icon"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="tech-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card scroll-reveal">
+                    <div class="project-info">
+                        <h3>Jaya Abadi</h3>
+                        <p>Website Monitoring untuk admin dan kasir. Dengan tujuan mendigitalisasi toko bangunan Jaya Abadi</p>
+                        <div class="project-tags">
+                            <span>LARAVEL</span>
+                            <span>BOOTSTRAP</span>
+                            <span>JS</span>
+                            <span>MYSQL</span>
+                        </div>
+                        <a href="#" class="btn-view-project">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card scroll-reveal">
+                    <div class="project-info">
+                        <h3>Skincare Monitoring App</h3>
+                        <p>Aplikasi desktop berbasis Java untuk penjualan skincare</p>
+                        <div class="project-tags">
+                            <span>JAVA</span>
+                            <span>SWING</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="btn-view-project">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card scroll-reveal">
+                    <div class="project-info">
+                        <h3>Portofolio</h3>
+                        <p>Website portofolio saya</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>GSAP</span>
+                        </div>
+                        <a href="#" class="btn-view-project">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content scroll-reveal">
+                <p>Tertarik bekerja sama atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya.</p>
+                <a href="mailto:erlanggaabdeepasha@gmail.com" class="btn btn-primary">Kirim Email</a>
+                <div class="social-links">
+                    <a href="https://github.com/onlypasha" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abdee-pasha-079794358/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/abdee.pasha/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Erlangga. Built with <i class="fas fa-heart"></i> and Code.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
