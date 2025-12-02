@@ -308,3 +308,45 @@ faqItems.forEach(item => {
 // Start animation
 init();
 animate();
+
+// Certificate Modal
+const modal = document.getElementById('certificateModal');
+const modalImg = document.getElementById('modalImage');
+const modalCaption = document.getElementById('modalCaption');
+const closeModal = document.querySelector('.modal-close');
+const certificateCards = document.querySelectorAll('.certificate-card');
+
+// Add click event to each certificate card
+certificateCards.forEach(card => {
+    card.addEventListener('click', function() {
+        const img = this.querySelector('.certificate-image img');
+        const title = this.querySelector('.certificate-info h3').textContent;
+        const issuer = this.querySelector('.certificate-issuer').textContent;
+        
+        if (img) {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modalCaption.textContent = `${title} - ${issuer}`;
+        }
+    });
+});
+
+// Close modal when clicking the X button
+closeModal.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
+// Close modal when clicking outside the image
+modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+    }
+});
