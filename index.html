@@ -32,6 +32,7 @@
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <li><button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
                 </ul>
@@ -251,6 +252,37 @@ if (developer.hardWorker) {
         </div>
     </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <article class="certificate-card scroll-reveal">
+                    <div class="certificate-image">
+                        <img src="sertifikat/idn.jpg" alt="IDN Network Cyber Security Dasar">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>IDN Network Cyber Security Dasar</h3>
+                        <p class="certificate-issuer">IDN Network</p>
+                        <p class="certificate-date">2024</p>
+                    </div>
+                </article>
+                <!-- Certificate 2 -->
+                <article class="certificate-card scroll-reveal">
+                    <div class="certificate-image">
+                        <img src="sertifikat/Screenshot 2025-12-02 153204.png" alt="Cisco Introduction to Cyber Security">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Cyber Security Essentials</h3>
+                        <p class="certificate-issuer">Cisco</p>
+                        <p class="certificate-date">2025</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
@@ -266,6 +298,13 @@ if (developer.hardWorker) {
             </div>
         </div>
     </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Certificate">
+        <div id="modalCaption"></div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
